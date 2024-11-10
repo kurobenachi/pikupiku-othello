@@ -1,0 +1,163 @@
+body {
+  background: url(./images/background_medievalScroll.webp);
+  background-repeat:  no-repeat;
+  background-size:cover;
+  font-family: "游明朝" ;
+}
+
+.recipient {
+  font-size: 0; /* ボタンの余白をなくす */
+}
+
+#titre {
+  margin: 2rem auto;
+  text-align: center;
+}
+
+#titreLetter {
+  color: #170d01;
+  font-size: 3rem;
+  letter-spacing: 0.4rem;
+}
+
+#board {
+  margin: 1rem auto;
+  width: 40rem;
+  height: 40rem;
+  background-color: black;
+  outline: 1.5rem solid black;
+}
+
+.square {
+  /* サイズ */
+  width: 5rem;
+  height: 5rem;
+  
+  /* 色 */
+  background-color: green;
+  box-shadow: none !important;
+
+  /* フォントサイズ */
+  font-size: 3.5rem;
+  line-height: 0;
+  padding: 10px 0;
+}
+
+/*
+.square {
+  width: 5rem;
+  height: 5rem;
+  background-color: green;
+  box-shadow: none !important;
+  font-size: 3.5rem;
+  line-height: 0;
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+*/
+
+.piece-image {
+  width: 3.5rem;
+  height: 3.5rem;
+  object-fit: contain; /* 画像をマス目に収める */
+}
+
+/* 黒のピース（画像のみ反転） */
+.piece-image.black {
+  filter: invert(100%);
+}
+
+/* 白のピース（反転なし） */
+.piece-image.white {
+  filter: invert(0%);
+}
+
+.cant-select {
+  background-color: green !important;
+}
+
+
+.btn-valid {
+  filter: saturate(100%);
+}
+
+.btn-invalid {
+  filter: saturate(0%);
+}
+
+
+/*画像でボタンを隠す汚い実現、要修正*/
+
+#controleur {
+  /* 配置 */
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+  width:10rem
+  height: 5rem
+}
+
+#btn-initialize {
+  position: fixed;
+  top: 3rem;
+  left: 3rem;
+}
+
+#img-initialize {
+  position: fixed;
+  top: 1.5rem;
+  left: 1.5rem;
+  height: 4rem;
+}
+
+#btn-BGM {
+  position: fixed;
+  top: 8rem;
+  left: 5rem;
+  width: 1rem;
+  height: 1rem;
+}
+
+#img-btn-BGM {
+  position: fixed;
+  top: 6rem;
+  left: 1.5rem;
+  height: 4rem;
+}
+
+#turnIndicator {
+  position: fixed;
+  top: 1.5rem;
+  right: 1.5rem;
+  color: antiquewhite;
+  background-image: url('./images/background_turnIndicator.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 21rem; /* 必要に応じて幅を調整 */
+  height: 6rem; /* 必要に応じて高さを調整 */
+  display: flex;
+  align-items: center; /* 垂直方向の中央揃え */
+  justify-content: center; /* 水平方向の中央揃え */
+  font-size: 2rem;
+  letter-spacing: 0.4rem;
+}
+
+#turnNumber {
+  position: fixed;
+  top: 7.5rem;
+  right: 1.5rem;
+  color: antiquewhite;
+  background-image: url('./images/background_turnIndicator.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 21rem; /* 必要に応じて幅を調整 */
+  height: 6rem; /* 必要に応じて高さを調整 */
+  display: flex;
+  align-items: center; /* 垂直方向の中央揃え */
+  justify-content: center; /* 水平方向の中央揃え */
+  font-size: 2rem;
+  letter-spacing: 0.6rem;
+}
