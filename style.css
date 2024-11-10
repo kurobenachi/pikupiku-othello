@@ -21,7 +21,7 @@ body {
 }
 
 #board {
-  margin: 1rem auto;
+  margin: 18rem auto;
   width: 40rem;
   height: 40rem;
   background-color: black;
@@ -130,7 +130,7 @@ body {
 
 #turnIndicator {
   position: fixed;
-  top: 1.5rem;
+  top: 8rem;
   right: 1.5rem;
   color: antiquewhite;
   background-image: url('./images/background_turnIndicator.png');
@@ -147,7 +147,7 @@ body {
 
 #turnNumber {
   position: fixed;
-  top: 7.5rem;
+  top: 14rem;
   right: 1.5rem;
   color: antiquewhite;
   background-image: url('./images/background_turnIndicator.png');
